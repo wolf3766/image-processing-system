@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program (dist folder)",  // Updated name for clarity
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/dist/index.js",  // Updated path to point to dist folder
+      "outFiles": [
+        "${workspaceFolder}/dist/**/*.js"  // Updated outFiles to match dist folder
+      ]
+    }
+  ]
+}
